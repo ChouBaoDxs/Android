@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="@drawable/bg_shouhuoxinxi">
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_username"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:hint="输入账号"
+        android:lines="1"
+        android:textSize="20sp"
+        android:textCursorDrawable="@drawable/et_cursor_style"
+        android:drawableBottom="@drawable/et_line_style"
+        android:background="@null"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_password"
+        android:inputType="textPassword"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:hint="输入密码"
+        android:lines="1"
+        android:textSize="20sp"
+        android:textCursorDrawable="@drawable/et_cursor_style"
+        android:drawableBottom="@drawable/et_line_style"
+        android:background="@null"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_password_2"
+        android:inputType="textPassword"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:hint="确认密码"
+        android:textSize="20sp"
+        android:lines="1"
+        android:textCursorDrawable="@drawable/et_cursor_style"
+        android:drawableBottom="@drawable/et_line_style"
+        android:background="@null"/>
+
+</LinearLayout>

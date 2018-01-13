@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/leftmenu_background">
+
+    <LinearLayout
+        android:id="@+id/main_Linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_topbar"
+            layout="@layout/top_bar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1A000000">
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/background_tabs"/>
+
+            <LinearLayout
+                android:id="@+id/shopping_cart"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/theme_color"
+                android:orientation="horizontal">
+
+                <com.choubao.www.softwareengineeringproject.touchripplewidget.RippleImageView
+                    android:id="@+id/RippleImageView_shopping_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@color/theme_color"
+                    android:maxHeight="100dp"
+                    android:maxWidth="100dp"
+                    android:onClick="showShoppingCart"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shopping_car"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:onClick="popupWindow_dismiss"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="总金额:"
+                        android:textColor="#666666"
+                        android:textSize="20sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/theme_color"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rmb"/>
+
+                    <TextView
+                        android:id="@+id/sum_Money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:paddingLeft="1dp"
+                        android:text="0.00"
+                        android:textColor="@color/theme_color"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <com.choubao.www.softwareengineeringproject.touchripplewidget.RippleTextView
+                    android:id="@+id/pay_Money"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@color/theme_color"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxHeight="100dp"
+                    android:maxWidth="100dp"
+                    android:onClick="payMoney"
+                    android:scaleType="centerCrop"
+                    android:text="结算"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/shopping_cart"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tabs"
+                tools:context=".MainActivity"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

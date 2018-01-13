@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/textView_shoppingcar_mingcheng"
+        android:layout_width="0dp"
+        android:layout_weight="1.8"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:paddingLeft="5dp"
+        android:id="@+id/textView_shoppingcar_Hardware_Name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:adjustViewBounds="true"
+            android:background="@color/theme_color"
+            android:maxHeight="10dp"
+            android:maxWidth="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rmb" />
+
+        <TextView
+            android:id="@+id/textView_shoppingcar_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9999.0"
+            android:textColor="@color/theme_color"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|right">
+
+        <ImageView
+            android:id="@+id/imageView_shoppingcar_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:maxHeight="35dp"
+            android:maxWidth="35dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_to_shopping_car"
+            android:background="@color/theme_color"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_shoppingcar_shumu"
+            android:text="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageView_shoppingcar_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:maxHeight="35dp"
+            android:maxWidth="35dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/remove"
+            android:background="@color/theme_color"/>
+
+
+    </LinearLayout>
+</LinearLayout>

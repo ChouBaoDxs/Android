@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leftmenu_background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="@drawable/bg_shouhuoxinxi">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:lines="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:hint="填写账号"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/username"
+                android:textCursorDrawable="@drawable/et_cursor_style"
+                android:drawableBottom="@drawable/et_line_style"/>
+
+            <EditText
+                android:lines="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:hint="填写密码"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:id="@+id/password"
+                android:textCursorDrawable="@drawable/et_cursor_style"
+                android:drawableBottom="@drawable/et_line_style"/>
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFA500"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:id="@+id/login"/>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="忘记密码"
+                    android:textColor="#FFA500"
+                    android:textSize="18sp"
+                    android:id="@+id/forget_password"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/No_register_login"
+                    android:textColor="#FFA500"
+                    android:textSize="18sp"
+                    android:gravity="left"
+                    android:text="免注册登录"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="新用户注册"
+                    android:textColor="#FFA500"
+                    android:textSize="18sp"
+                    android:id="@+id/register"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第三方登录"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFA500"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/weibo"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/weixin"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="30dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/qq"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

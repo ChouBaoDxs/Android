@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <Spinner
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_liebiaopaixu"
+            android:entries="@array/liebiaopaixu"
+            android:layout_weight="1.8" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/editText_sousuo"
+                android:hint="搜索"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:id="@+id/imageView_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:adjustViewBounds="true"
+                android:maxHeight="25dp"
+                android:maxWidth="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/delete"
+                android:visibility="visible"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+
+        <!--筛选先藏起来不做-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="筛选"
+            android:gravity="center"
+            android:id="@+id/textView_shaixuan"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:id="@+id/listView_myCpu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="无商品信息"
+            android:id="@+id/tv_nodata"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

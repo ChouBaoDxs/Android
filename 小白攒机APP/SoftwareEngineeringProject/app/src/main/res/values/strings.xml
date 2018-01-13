@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小白攒机</string>
+
+    <array name="liebiaopaixu">
+        <item>综合排序</item>
+        <item>价格由低到高</item>
+        <item>价格由高到低</item>
+    </array>
+
+</resources>

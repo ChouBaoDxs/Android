@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <!--<style name="AppBaseTheme" parent="android:Theme.Light"></style>-->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowBackground">@color/background_window</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <!--导航栏颜色-->
+        <!--<item name="colorPrimary">#FFFFFF</item>-->
+        <!--状态栏颜色-->
+        <!--<item name="colorPrimaryDark">#FFFFFF</item>-->
+    </style>
+
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:icon">@drawable/icon</item>
+        <item name="android:background">#FFFFFF</item>
+
+    </style>
+
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>>
+
+    <style name="goodinformation_popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim_goodinformation</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim_goodinformation</item>
+    </style>
+
+    <style name="leftmenu_popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim_left_menu</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim_leftmenu</item>
+    </style>
+
+</resources>
