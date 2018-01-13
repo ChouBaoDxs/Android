@@ -7,8 +7,9 @@
 * 用户登录、简单注册</br>
 * 商品数据获取、展示</br>
 * 订单提交</br>
+
 大致效果（gif比较大，耐心等待加载）：</br>
-![Image text](https://raw.githubusercontent.com/ChouBaoDxs/MyResources/master/image/Android/小白攒机APP/xiaobaicuanji.gif)
+![Image text](https://raw.githubusercontent.com/ChouBaoDxs/MyResources/master/image/Android/小白攒机APP/xiaobaicuanji.gif)</br>
 截图：</br>
 ![Image text](https://github.com/ChouBaoDxs/MyResources/blob/master/image/Android/小白攒机APP/登录界面.png)
 ![Image text](https://github.com/ChouBaoDxs/MyResources/blob/master/image/Android/小白攒机APP/无网络主界面.png)
