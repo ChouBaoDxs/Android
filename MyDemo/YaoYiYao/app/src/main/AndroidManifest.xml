@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.choubao.www.yaoyiyao">
+          package="com.choubao.www.yaoyiyao">
 
     <application
         android:allowBackup="true"
@@ -10,10 +10,18 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".displacement.Displacement_Activity">
+        </activity>
+        <activity android:name=".mouse.MouseActivity">
+        </activity>
+        <activity android:name=".gravity.GravityActivity">
+        </activity>
+        <activity android:name=".AllActivity">
         </activity>
     </application>
 

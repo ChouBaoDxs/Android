@@ -12,6 +12,29 @@
     android:gravity="center"
     tools:context="com.choubao.www.yaoyiyao.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="初始值"
+            android:id="@+id/tv_start"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="初始值"
+            android:id="@+id/tv_jiaozheng"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_v"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,4 +53,33 @@
         android:text="Z"
         android:id="@+id/tv_z"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去算位移"
+        android:textAllCaps="false"
+        android:id="@+id/btn_lab1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去MouseActivity"
+        android:textAllCaps="false"
+        android:id="@+id/btn_lab2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去重力传感器"
+        android:textAllCaps="false"
+        android:id="@+id/btn_lab3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去所有传感器"
+        android:textAllCaps="false"
+        android:id="@+id/btn_all"/>
+
 </LinearLayout>
