@@ -2,7 +2,7 @@
 项目起因：大三课程设计</br>
 简要说明：新手之作，许多地方需要完善</br>
 使用到的第三方库：[PagerSlidingTabStriplibrary](https://github.com/longjl/PagerSlidingTabStripLibrary)——github上的一个开源项目，用于ViewPager切换</br>
-数据库：毕设之友——[Bmob后端云](https://www.bmob.cn)，appid在源码中，请利用其不要扰乱数据</br>
+数据库：毕设之友——[Bmob后端云](https://www.bmob.cn)，appid在源码中，请不要利用其扰乱数据</br>
 功能：</br>
 * 用户登录、简单注册</br>
 * 商品数据获取、展示</br>
